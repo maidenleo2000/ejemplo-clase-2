@@ -1,0 +1,137 @@
+.static, .relative, .absolute, .fixed, .sticky, .zindex, .uno, .dos{
+    width: 150px;
+    height: 150px;
+    /* margin-bottom: 10px; */
+    border: 1px solid black;
+}
+
+.static{
+    color: white;
+    background-color: crimson;
+}
+
+.relative{
+    color: blue;
+    background-color: cadetblue;
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+    /*Palabras reservadas para mover*/
+    /* top: 10px; */
+    /* left: 10px; */
+    /* right: 10px; */
+    /* bottom: 10px; */
+}
+
+.absolute{
+    background-color: coral;
+    color: darkmagenta;
+    position: absolute;
+
+     /*Palabras reservadas para mover*/
+    /* top: 10px; */
+    /* left: 10px; */
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.zindex{
+    background-color: blueviolet;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.fixed{
+    background-color: cornflowerblue;
+    color:antiquewhite;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sticky{
+    background-color: darkolivegreen;
+    color:burlywood;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+.uno{
+    background-color: brown;
+    z-index: 0;
+}
+
+.dos{
+    background-color: aquamarine;
+    z-index: 2;
+}
+
+.ejemploPosition{
+    width: 300px;
+    height: 100px;
+    margin: 20px auto;
+    border: 1px solid black;
+    display: grid;
+    grid-auto-rows: 0.3fr;
+    grid-template-columns: 0.3fr;
+    justify-content: flex-start;
+    align-content: flex-start;
+    position: relative;
+
+}
+
+.botonMenu{
+    width: 50px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    position: relative; /*se aplica position relative para poder usar el zindex. zindex solo se aplica a cualquier position DIFERENTE de STATIC*/
+    z-index: 3;
+    cursor: pointer;
+}
+
+.menu{
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    top: 15px;
+    left: 19px;
+    background-color: aqua;
+    z-index: 1;
+    display: none;
+}
+
+.menu ul{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+}
+
+.botonMenu:hover + .menu{
+    display: block;
+    
+}
+
+.menu:hover{
+    display: block;
+}
+
+
+
+
+
+
+
+
+

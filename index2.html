@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Position</h2>
+    <div class="static">
+        Static => Elemento se ubica en donde es leído <br>
+        (comportamiento por defecto en HTML)
+    </div>
+    <div class="relative">
+        Relative => El elemento se sale del flujo normal
+        <div class="absolute">
+        Absolute => El elemento se ubica en base al elemento padre con pisition distinto de static o el body        
+        </div>
+        <div class="absolute zindex"></div>
+        
+    </div>
+    
+    <div class="fixed">
+        Fixed => El elemento se ubica en base al elemento padre con position distinto de static o el body y se va a quedar en el lugar
+    </div>
+    <div class="sticky">
+        Sticky => El elemento se sale del flujo normal pero se "pega" a la esquina deseada
+    </div>
+    <div class="sticky uno"></div>
+    <div class="sticky dos"></div>
+    <div style="height: 1000px;"></div>
+
+    <h2>Menu Desplegable</h2>
+    <div class="ejemploPosition">
+        <div class="botonMenu">
+            Menu
+        </div>
+        <div class="menu">
+        <ul>
+            <li>
+                <a href="">Link</a>
+            </li>
+            <li>
+                <a href="">Link</a>
+            </li>
+            <li>
+                <a href="">Link</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
